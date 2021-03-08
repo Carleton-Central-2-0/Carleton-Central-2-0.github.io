@@ -10,6 +10,9 @@
     <meta name="author" content="">
 
     <title>Main Menu</title>
+	    <!-- Custom scripts for all pages-->
+	<script src="jquery-1.6.1.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -45,30 +48,23 @@
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Main Menu</span></a>
+					
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
+			
+			<!-- Quick Links -->
+			<li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <span>Quick Links</span></a>
+            </li>
 
             <!-- Heading -->
             <div class="sidebar-heading">
                 
             </div>
 
-            <!-- Nav Item - Display Grades -->
-            <li class="nav-item">
-                <a class="nav-link" href="z1displaygrades.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Display Grades</span></a>
-            </li>
-			
-			<!-- Nav Item - Student Records -->
-            <li class="nav-item">
-                <a class="nav-link" href="zrecords.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Student Records</span></a>
-            </li>
-			
 			<!-- Nav Item - Build Your Timetable -->
             <li class="nav-item">
                 <a class="nav-link" href="z1buildtable.html">
@@ -76,12 +72,40 @@
                     <span>Build Your Timetable</span></a>
             </li>
 			
+            <!-- Nav Item - Display Grades -->
+            <li class="nav-item">
+                <a class="nav-link" href="z1displaygrades.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Display Grades</span></a>
+            </li>
+			
+			<!-- Nav Item - Amount to Pay -->
+            <li class="nav-item">
+                <a class="nav-link" href="amountpay.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Amount to Pay</span></a>
+            </li>
+			
+			<!-- Nav Item - Exam Schedule -->
+            <li class="nav-item">
+                <a class="nav-link" href="examschedule.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Exam Schedule</span></a>
+            </li>
+			
+			<!-- Nav Item - MyAudit -->
+            <li class="nav-item">
+                <a class="nav-link" href="myaudit.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>MyAudit</span></a>
+            </li>
+
 			<!-- Nav Item - Graduate Admissions -->
             <li class="nav-item">
-                <a class="nav-link" href="z1graduateadmissions.html">
+                <a class="nav-link" href="MySuccess.html">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Graduate Admissions</span></a>
-            </li>		
+                    <span>MySuccess</span></a>
+            </li>
 			
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -184,118 +208,211 @@
 
 							<!-- Color System -->
                             <div class="row">
-                                <div class="col-lg-4 mb-3">
+								<!--- MENU ITEMS --->
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card bg-zdanger1 text-white shadow">
+                                        <div class="card-body"  >
+											<div class="dropdown mb-1" >
+												<button class="btn dropdown-toggle text-white shadow" type="button"
+													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													aria-expanded="false">
+												</button>
+											<a class="text-white" href="zregistration.html">Registration</a>
+											
+                                            <div class="text-white-50 small">Class registration details.</div>
+											<div id = "collapsible" >
+													<a class="dropdown-item" href="#">Registration Information</a>
+													<a class="dropdown-item" href="#">Build Your Timetable</a>
+													<a class="dropdown-item" href="#">Registration</a>
+													<a class="dropdown-item" href="#">Student Timetable</a>
+													<a class="dropdown-item" href="#">Registration Override Request</a>
+													<a class="dropdown-item" href="#">Display Holds</a>
+													<a class="dropdown-item" href="#">French Placement Test</a>
+													<a class="dropdown-item" href="#">Purchase Textbooks</a>
+												</div>
+											</div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+								
+								<div class="col-lg-6 mb-3">
                                     <div class="card bg-zdanger1 text-white shadow">
                                         <div class="card-body" >
 											<div class="dropdown mb-1" >
 												<button class="btn dropdown-toggle text-white shadow" type="button"
 													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-													aria-expanded="false"  >
-													Personal Information
+													aria-expanded="false">
+													─────────────────────────────
+												</button>
+												
+												<div class="dropdown-menu animated--fade-in"
+													aria-labelledby="dropdownMenuButton" >
+													<a class="dropdown-item" href="#">mySuccess Portal</a>
+													<a class="dropdown-item" href="#">myPMC</a>
+													<a class="dropdown-item" href="#">mySprott</a>
+												</div>
+											<a class="text-white" href="zsupport.html">Student Support Services</a>
+											</div>
+                                            <div class="text-white-50 small">mySuccess, myPMC and mySprott.</div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								<div class="col-lg-6 mb-3">
+                                    <div class="card bg-zdanger2 text-white shadow">
+                                        <div class="card-body" >
+											<div class="dropdown mb-1" >
+												<button class="btn dropdown-toggle text-white shadow" type="button"
+													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													aria-expanded="false">
+													─────────────────────────────
 												</button>
 												<div class="dropdown-menu animated--fade-in"
 													aria-labelledby="dropdownMenuButton" >
-													<a class="dropdown-item" href="#">Action</a>
+													<a class="dropdown-item" href="#">Amount to Pay</a>
+													<a class="dropdown-item" href="#">Campus Card</a>
+													<a class="dropdown-item" href="#">Print Tax Receipts</a>
+													<a class="dropdown-item" href="#">Request a Transcript/Certificate of Enrolment/Verification of Student Status</a>
+													<a class="dropdown-item" href="#">Request UPASS Optout</a>
+													<a class="dropdown-item" href="#">Optout Undergrad Insurance</a>
+													<a class="dropdown-item" href="#">Refund or Scholarship Balance Request</a>
 												</div>
+											<a class="text-white" href="zaccounts.html">Student Accounts</a>
 											</div>
-                                            <div class="text-white-50 small">Update your personal information here.</div>
+                                            <div class="text-white-50 small">Campus card, optouts and transcripts.</div>
                                         </div>
                                     </div>
                                 </div>
-								<!--- MENU ITEMS --->
-								 <div class="col-lg-4 mb-3">
+								
+								<div class="col-lg-6 mb-3">
                                     <div class="card bg-zdanger2 text-white shadow">
-                                        <div class="card-body">
-                                            <a  class="text-white" href="zregistration.html">Registration</a>
-                                            <div class="text-white-50 small">Check student accounts and class registration details.</div>
+                                        <div class="card-body" >
+											<div class="dropdown mb-1" >
+												<button class="btn dropdown-toggle text-white shadow" type="button"
+													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													aria-expanded="false">
+													─────────────────────────────
+												</button>
+												<div class="dropdown-menu animated--fade-in"
+													aria-labelledby="dropdownMenuButton" >
+													<a class="dropdown-item" href="#">Student Award Information</a>
+													<a class="dropdown-item" href="#">Undergraduate Online Application Forms</a>
+													<a class="dropdown-item" href="#">Graduate Online Application Forms</a>
+													<a class="dropdown-item" href="#">Thank You Messages</a>
+												</div>
+											<a class="text-white" href="zfinancial.html">Financial Assistance</a>
+											</div>
+                                            <div class="text-white-50 small">Awards and application forms.</div>
                                         </div>
                                     </div>
                                 </div>
-							
-                                <div class="col-lg-4 mb-3">
+								
+								<div class="col-lg-6 mb-3">
                                     <div class="card bg-zdanger3 text-white shadow">
-                                        <div class="card-body">
-                                            <a  class="text-white" href="zrecords.html">Student Records</a>
-                                            <div class="text-white-50 small">Admissions, grades and progress.</div>
+                                        <div class="card-body" >
+											<div class="dropdown mb-1" >
+												<button class="btn dropdown-toggle text-white shadow" type="button"
+													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													aria-expanded="false">
+													─────────────────────────────
+												</button>
+												<div class="dropdown-menu animated--fade-in"
+													aria-labelledby="dropdownMenuButton" >
+													<a class="dropdown-item" href="#">myGrades</a>
+													<a class="dropdown-item" href="#">myExam Schedule</a>
+													<a class="dropdown-item" href="#">myAudit</a>
+													<a class="dropdown-item" href="#">myASR</a>
+													<a class="dropdown-item" href="#">myProgress</a>
+												</div>
+											<a class="text-white" href="zprogress.html">Academic Progress and Exams</a>
+											</div>
+                                            <div class="text-white-50 small">Grades, exams and progress.</div>
                                         </div>
                                     </div>
                                 </div>
-                               
-                                <div class="col-lg-4 mb-3">
-                                    <div class="card bg-zdanger2 text-white shadow">
-                                        <div class="card-body">
-                                            <a  class="text-white" href="zprogress.html">Academic Progress</a>
-                                            <div class="text-white-50 small">Academic Audit, Status Report and Performance Evaluation.</div>
-                                        </div>
-                                    </div>
-                                </div>
-						
-                                <div class="col-lg-4 mb-3">
+								
+								<div class="col-lg-6 mb-3">
                                     <div class="card bg-zdanger3 text-white shadow">
-                                        <div class="card-body">
-                                            <a  class="text-white" href="zawards.html">Awards and Financial Assistance</a>
-                                            <div class="text-white-50 small">Student award information and online application forms.</div>
+                                        <div class="card-body" >
+											<div class="dropdown mb-1" >
+												<button class="btn dropdown-toggle text-white shadow" type="button"
+													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													aria-expanded="false">
+													─────────────────────────────
+												</button>
+												<div class="dropdown-menu animated--fade-in"
+													aria-labelledby="dropdownMenuButton" >
+													<a class="dropdown-item" href="#">Housing Services</a>
+												</div>
+											<a class="text-white" href="zhousing.html">Residence</a>
+											</div>
+                                            <div class="text-white-50 small">Housing services.</div>
                                         </div>
                                     </div>
                                 </div>
-								<div class="col-lg-4 mb-3">
-                                    <div class="card bg-zdanger3 text-white shadow">
-                                        <div class="card-body">
-                                            <a  class="text-white" href="zsuccess.html">MySuccess</a>
-                                            <div class="text-white-50 small">Career services, Co-op and Academic Support.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 mb-3">
+								
+								<div class="col-lg-6 mb-3">
                                     <div class="card bg-zdanger1 text-white shadow">
-                                        <div class="card-body">
-                                            <a  class="text-white" href="zsupport.html">Student Support Services</a>
-                                            <div class="text-white-50 small">MySuccess, MySprott, myPMC and E-thesis.</div>
+                                        <div class="card-body" >
+											<div class="dropdown mb-1" >
+												<button class="btn dropdown-toggle text-white shadow" type="button"
+													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													aria-expanded="false">
+													─────────────────────────────
+												</button>
+												<div class="dropdown-menu animated--fade-in"
+													aria-labelledby="dropdownMenuButton" >
+													<a class="dropdown-item" href="#">Review Admission Application</a>
+													<a class="dropdown-item" href="#">View Holds and Conditions of Offer</a>
+													<a class="dropdown-item" href="#">Internal Application for Admission</a>
+													<a class="dropdown-item" href="#">Change Program Elements</a>
+													<a class="dropdown-item" href="#">myTransferCredit</a>
+													<a class="dropdown-item" href="#">Outgoing International Exchange Application</a>
+													<a class="dropdown-item" href="#">Letter of Permission Applications</a>
+													<a class="dropdown-item" href="#">Apply to Graduate</a>
+													<a class="dropdown-item" href="#">Graduate Admissions</a>
+													<a class="dropdown-item" href="#">E-Thesis</a>
+												</div>
+											<a class="text-white" href="zapplications.html">Admissions and Applications</a>
+											</div>
+                                            <div class="text-white-50 small">Admissions and applications.</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 mb-3">
+								
+								<div class="col-lg-6 mb-3">
                                     <div class="card bg-zdanger1 text-white shadow">
-                                        <div class="card-body">
-                                            <a  class="text-white" href="zta.html">TA Management</a>
-                                            <div class="text-white-50 small">Applications and training.</div>
+                                        <div class="card-body" >
+											<div class="dropdown mb-1" >
+												<button class="btn dropdown-toggle text-white shadow" type="button"
+													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													aria-expanded="false">
+													─────────────────────────────
+												</button>
+												<div class="dropdown-menu animated--fade-in"
+													aria-labelledby="dropdownMenuButton" >
+													<a class="dropdown-item" href="#">Online Training Courses</a>
+												</div>
+											<a class="text-white" href="ztraining.html">Online Training Courses</a>
+											</div>
+                                            <div class="text-white-50 small">Online Training Courses.</div>
                                         </div>
                                     </div>
                                 </div>
-								<div class="col-lg-4 mb-3">
-                                    <div class="card bg-zdanger2 text-white shadow">
-                                        <div class="card-body">
-                                            <a  class="text-white" href="zapplications.html">Student Online Applications</a>
-                                            <div class="text-white-50 small">Apply to graduate, UPASS and transcript.</div>
-                                        </div>
-                                    </div>
-                                </div>
-							
-								<div class="col-lg-4 mb-3">
-                                    <div class="card bg-zdanger2 text-white shadow">
-                                        <div class="card-body">
-                                            <a  class="text-white" href="zhousing.html">Housing Services</a>
-                                            <div class="text-white-50 small">Residence waitlist, offers and applications.</div>
-                                        </div>
-                                    </div>
-                                </div>
-								<div class="col-lg-4 mb-3">
-                                    <div class="card bg-zdanger1 text-white shadow">
-                                        <div class="card-body">
-                                            <a  class="text-white" href="zonline.html">Online Courses</a>
-                                            <div class="text-white-50 small">AODA and WHMIS training.</div>
-                                        </div>
-                                    </div>
-                                </div>
+
+								
                             </div>
 
                             <!-- Project Card Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Today's Schedule</h6>
+									<a href="z1buildtable.html">
+                                    <h6 class="m-0 font-weight-bold text-primary">This Week's Schedule</h6>
+									</a>
                                 </div>
                                 <div class="card-body">
-                                   <img src="img/timetable.png" alt="Student Timetable" width="508" height="306">
+                                   <img src="img/timetable.png" alt="Student Timetable" width="800" height="418">
                                 </div>
                             </div>
 
@@ -394,8 +511,7 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+
 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
