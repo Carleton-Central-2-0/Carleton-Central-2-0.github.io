@@ -10,6 +10,9 @@
     <meta name="author" content="">
 
     <title>Main Menu</title>
+	    <!-- Custom scripts for all pages-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -211,45 +214,44 @@
                                         <div class="card-body" >
 											<div class="dropdown mb-1" >
 												<button class="btn dropdown-toggle text-white shadow" type="button"
-													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													id="dropdownMenuButton" aria-haspopup="true"
 													aria-expanded="false">
-													Registration
 												</button>
-												<div class="dropdown-menu animated--fade-in"
-													aria-labelledby="dropdownMenuButton" >
-													<a class="dropdown-item" href="#">Registration Information</a>
-													<a class="dropdown-item" href="#">Build Your Timetable</a>
-													<a class="dropdown-item" href="#">Registration</a>
-													<a class="dropdown-item" href="#">Student Timetable</a>
-													<a class="dropdown-item" href="#">Registration Override Request</a>
-													<a class="dropdown-item" href="#">Display Holds</a>
-													<a class="dropdown-item" href="#">French Placement Test</a>
-													<a class="dropdown-item" href="#">Purchase Textbooks</a>
-												</div>
-											</div>
+											<a class="text-white" href="zregistration.html">Registration</a>
+											
                                             <div class="text-white-50 small">Class registration details.</div>
+											<div class = "collapsible" style="display: none";>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskrsta.P_RegsStatusDisp">Registration Information</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwysched.p_select_term_s?wsea_code=INT">Build Your Timetable</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskfreg.P_AltPin">Registration</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskfshd.P_CrseSchd">Student Timetable</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_CROS.p_trmsel">Registration Override Request</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskoacc.P_ViewHold">Display Holds</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_french_test.main">French Placement Test</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_bookstore.main">Purchase Textbooks</a>
+												</div>
+											</div>
                                         </div>
                                     </div>
                                 </div>
-								
+                               
 								<div class="col-lg-6 mb-3">
                                     <div class="card bg-zdanger1 text-white shadow">
                                         <div class="card-body" >
 											<div class="dropdown mb-1" >
 												<button class="btn dropdown-toggle text-white shadow" type="button"
-													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													id="dropdownMenuButton1" aria-haspopup="true"
 													aria-expanded="false">
-													Student Support Services
 												</button>
-												
-												<div class="dropdown-menu animated--fade-in"
-													aria-labelledby="dropdownMenuButton" >
-													<a class="dropdown-item" href="#">mySuccess Portal</a>
-													<a class="dropdown-item" href="#">myPMC</a>
-													<a class="dropdown-item" href="#">mySprott</a>
-												</div>
-											</div>
+											<a class="text-white" href="zsupport.html">Student Support Services</a>
+											
                                             <div class="text-white-50 small">mySuccess, myPMC and mySprott.</div>
+											<div class = "collapsible1" style="display: none";>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_career_services.main">mySuccess Portal</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_pmc.main">myPMC</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_sars.p_main?p_location=ADVISING">Academic Advising Center</a>
+												</div>
+											</div>
                                         </div>
                                     </div>
                                 </div>
@@ -259,22 +261,24 @@
                                         <div class="card-body" >
 											<div class="dropdown mb-1" >
 												<button class="btn dropdown-toggle text-white shadow" type="button"
-													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true"
 													aria-expanded="false">
-													Student Accounts
 												</button>
-												<div class="dropdown-menu animated--fade-in"
-													aria-labelledby="dropdownMenuButton" >
-													<a class="dropdown-item" href="#">Amount to Pay</a>
-													<a class="dropdown-item" href="#">Campus Card</a>
-													<a class="dropdown-item" href="#">Print Tax Receipts</a>
-													<a class="dropdown-item" href="#">Request a Transcript/Certificate of Enrolment/Verification of Student Status</a>
-													<a class="dropdown-item" href="#">Request UPASS Optout</a>
-													<a class="dropdown-item" href="#">Optout Undergrad Insurance</a>
-													<a class="dropdown-item" href="#">Refund or Scholarship Balance Request</a>
+												<a class="text-white" href="zaccounts.html">Student Accounts</a>
+												
+												<div class="text-white-50 small">Campus card, optouts and transcripts.</div>
+												<div class="collapsible2" style="display: none";>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_sarcentral.p_amt_due">Amount to Pay</a>
+													<a class="dropdown-item" href="https://wcc.carleton.ca/student/welcome.php">Campus Card</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/twbkwbis.P_GenMenu?name=bmenu.P_CanTaxMnu">Print Tax Receipts</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_request.p_main">Request a Transcript/Certificate of Enrolment/Verification of Student Status</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_upass_optout.p_continue">Request UPASS Optout</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_insurance_optout.main">Optout Undergrad Insurance</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_refund_request.p_main">Refund or Scholarship Balance Request</a>
 												</div>
+											
 											</div>
-                                            <div class="text-white-50 small">Campus card, optouts and transcripts.</div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -284,19 +288,21 @@
                                         <div class="card-body" >
 											<div class="dropdown mb-1" >
 												<button class="btn dropdown-toggle text-white shadow" type="button"
-													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true"
 													aria-expanded="false">
-													Financial Assistance
+													
 												</button>
-												<div class="dropdown-menu animated--fade-in"
-													aria-labelledby="dropdownMenuButton" >
-													<a class="dropdown-item" href="#">Student Award Information</a>
-													<a class="dropdown-item" href="#">Undergraduate Online Application Forms</a>
-													<a class="dropdown-item" href="#">Graduate Online Application Forms</a>
-													<a class="dropdown-item" href="#">Thank You Messages</a>
+												<a class="text-white" href="zfinancial.html">Financial Assistance</a>
+												
+												<div class="text-white-50 small">Awards and application forms.</div>
+												<div class="collapsible3" style="display: none"; >
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/P_Liststudawdfund.P_ViewSutdAcctFnd">Student Award Information</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_faa_online_apps.p_term_select">Undergraduate Online Application Forms</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_gr_awards.p_stu_main">Graduate Online Application Forms</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_thank_donor_fund_awards.p_main">Thank You Messages</a>
 												</div>
 											</div>
-                                            <div class="text-white-50 small">Awards and application forms.</div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -306,20 +312,23 @@
                                         <div class="card-body" >
 											<div class="dropdown mb-1" >
 												<button class="btn dropdown-toggle text-white shadow" type="button"
-													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true"
 													aria-expanded="false">
-													Academic Progress and Exams
+													
 												</button>
-												<div class="dropdown-menu animated--fade-in"
-													aria-labelledby="dropdownMenuButton" >
-													<a class="dropdown-item" href="#">myGrades</a>
-													<a class="dropdown-item" href="#">myExam Schedule</a>
-													<a class="dropdown-item" href="#">myAudit</a>
-													<a class="dropdown-item" href="#">myASR</a>
-													<a class="dropdown-item" href="#">myProgress</a>
+												<a class="text-white" href="zprogress.html">Academic Progress and Exams</a>
+												
+												<div class="text-white-50 small">Grades, exams and progress.</div>
+												<div class="collapsible4" style="display: none"; >
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskogrd.P_ViewTermGrde">myGrades</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_exam_class_list.p_parm_form">myExam Schedule</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/twbkwbis.P_GenMenu?name=bmenu.P_DarsMnu">myAudit</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_asr.p_main">myASR</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_myprogress.p_main">myProgress</a>
 												</div>
+											
 											</div>
-                                            <div class="text-white-50 small">Grades, exams and progress.</div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -329,16 +338,19 @@
                                         <div class="card-body" >
 											<div class="dropdown mb-1" >
 												<button class="btn dropdown-toggle text-white shadow" type="button"
-													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true"
 													aria-expanded="false">
-													Residence
+													
 												</button>
-												<div class="dropdown-menu animated--fade-in"
-													aria-labelledby="dropdownMenuButton" >
-													<a class="dropdown-item" href="#">Housing Services</a>
+												<a class="text-white" href="zhousing.html">Residence</a>
+												
+												<div class="text-white-50 small">Housing services.</div>
+												<div class="collapsible5" style="display: none"; >
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_housing_online.p_main">Housing Services</a>
 												</div>
+											
 											</div>
-                                            <div class="text-white-50 small">Housing services.</div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -348,25 +360,28 @@
                                         <div class="card-body" >
 											<div class="dropdown mb-1" >
 												<button class="btn dropdown-toggle text-white shadow" type="button"
-													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													id="dropdownMenuButton6" data-toggle="dropdown" aria-haspopup="true"
 													aria-expanded="false">
-													Admissions and Applications
+												
 												</button>
-												<div class="dropdown-menu animated--fade-in"
-													aria-labelledby="dropdownMenuButton" >
-													<a class="dropdown-item" href="#">Review Admission Application</a>
-													<a class="dropdown-item" href="#">View Holds and Conditions of Offer</a>
-													<a class="dropdown-item" href="#">Internal Application for Admission</a>
-													<a class="dropdown-item" href="#">Change Program Elements</a>
-													<a class="dropdown-item" href="#">myTransferCredit</a>
-													<a class="dropdown-item" href="#">Outgoing International Exchange Application</a>
-													<a class="dropdown-item" href="#">Letter of Permission Applications</a>
-													<a class="dropdown-item" href="#">Apply to Graduate</a>
-													<a class="dropdown-item" href="#">Graduate Admissions</a>
-													<a class="dropdown-item" href="#">E-Thesis</a>
+												<a class="text-white" href="zapplications.html">Admissions and Applications</a>
+												
+												<div class="text-white-50 small">Admissions and applications.</div>
+												<div class="collapsible6" style="display: none"; >
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskalog.P_DispChoicesStu">Review Admission Application</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskoacc.P_ViewHold">View Holds and Conditions of Offer</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/webadmit.privacy">Internal Application for Admission</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_major.main">Change Program Elements</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_equiv_crse.p_showtrans">myTransferCredit</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_oie.p_main">Outgoing International Exchange Application</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_lop.p_continue">Letter of Permission Applications</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_gradapp.main">Apply to Graduate</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_graf_applicant.p_main">Graduate Admissions</a>
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_ethesis.p_redirect">E-Thesis</a>
 												</div>
+											
 											</div>
-                                            <div class="text-white-50 small">Admissions and applications.</div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -376,16 +391,19 @@
                                         <div class="card-body" >
 											<div class="dropdown mb-1" >
 												<button class="btn dropdown-toggle text-white shadow" type="button"
-													id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+													id="dropdownMenuButton7" data-toggle="dropdown" aria-haspopup="true"
 													aria-expanded="false">
-													Online Training Courses
+													
 												</button>
-												<div class="dropdown-menu animated--fade-in"
-													aria-labelledby="dropdownMenuButton" >
-													<a class="dropdown-item" href="#">Online Training Courses</a>
+												<a class="text-white" href="ztraining.html">Online Training Courses</a>
+												
+												<div class="text-white-50 small">Online Training Courses.</div>
+												<div class="collapsible7" style="display: none"; >
+													<a class="dropdown-item" href="https://central.carleton.ca/prod/twbkwbis.P_GenMenu?name=hmenu.P_OnlineCourses">Online Training Courses</a>
 												</div>
+											
 											</div>
-                                            <div class="text-white-50 small">Online Training Courses.</div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -396,10 +414,12 @@
                             <!-- Project Card Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
+									<a href="z1buildtable.html">
                                     <h6 class="m-0 font-weight-bold text-primary">This Week's Schedule</h6>
+									</a>
                                 </div>
                                 <div class="card-body">
-                                   <img src="img/timetable.png" alt="Student Timetable" width="508" height="306">
+                                   <img src="img/timetable.png" alt="Student Timetable" width="800" height="418">
                                 </div>
                             </div>
 
@@ -498,8 +518,7 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+
 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
