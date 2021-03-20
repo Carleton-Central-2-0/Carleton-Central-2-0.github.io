@@ -45,50 +45,64 @@
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Main Menu</span></a>
+					
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
+			
+			<!-- Quick Links -->
+			<li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <span>Quick Links</span></a>
+            </li>
 
             <!-- Heading -->
             <div class="sidebar-heading">
                 
             </div>
-           
-            <!-- Nav Item - Personal Information -->
-            <li class="nav-item">
-                <a class="nav-link" href="zpersonal.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Personal Information</span></a>
-            </li>
 
-            <!-- Nav Item - Display Grades -->
-            <li class="nav-item">
-                <a class="nav-link" href="z1displaygrades.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Display Grades</span></a>
-            </li>
-			
-			<!-- Nav Item - Student Records -->
-            <li class="nav-item">
-                <a class="nav-link" href="zrecords.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Student Records</span></a>
-            </li>
-			
 			<!-- Nav Item - Build Your Timetable -->
             <li class="nav-item">
-                <a class="nav-link" href="z1buildtable.html">
+                <a class="nav-link" href="https://central.carleton.ca/prod/bwysched.p_select_term_s?wsea_code=INT">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Build Your Timetable</span></a>
             </li>
 			
+            <!-- Nav Item - Display Grades -->
+            <li class="nav-item">
+                <a class="nav-link" href="https://central.carleton.ca/prod/bwskogrd.P_ViewTermGrde">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Display Grades</span></a>
+            </li>
+			
+			<!-- Nav Item - Amount to Pay -->
+            <li class="nav-item">
+                <a class="nav-link" href="https://central.carleton.ca/prod/pkg_sarcentral.p_amt_due">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Amount to Pay</span></a>
+            </li>
+			
+			<!-- Nav Item - Exam Schedule -->
+            <li class="nav-item">
+                <a class="nav-link" href="https://central.carleton.ca/prod/pkg_exam_class_list.p_parm_form">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Exam Schedule</span></a>
+            </li>
+			
+			<!-- Nav Item - MyAudit -->
+            <li class="nav-item">
+                <a class="nav-link" href="https://central.carleton.ca/prod/twbkwbis.P_GenMenu?name=bmenu.P_DarsMnu">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>MyAudit</span></a>
+            </li>
+
 			<!-- Nav Item - Graduate Admissions -->
             <li class="nav-item">
-                <a class="nav-link" href="z1graduateadmissions.html">
+                <a class="nav-link" href="https://central.carleton.ca/prod/pkg_online_career_services.main">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Graduate Admissions</span></a>
-            </li>		
+                    <span>MySuccess</span></a>
+            </li>
 			
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -126,23 +140,19 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Cass Tegan</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Your Name</span>
                                 <img class="img-profile rounded-circle"
-                                    src="https://banner2.cleanpng.com/20180524/wiy/kisspng-carleton-university-university-of-ottawa-universit-terry-fox-5b070957254603.5937877015271877991527.jpg">
+                                    src="https://p7.hiclipart.com/preview/402/864/42/arrow-computer-icons-down-arrow.jpg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" id ="drop1" href="zpersonal.html">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
+                                    Personal Information
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" id="drop2" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -172,11 +182,9 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Student Support Services</h6>
                                 </div>
                                 <div class="card-body">
-                                    mySuccess Portal (Student Jobs, Events, Co-Curricular Record (CCR), 
-									Volunteer Bureau)
-									myPMC (Paul Menton Centre for Students with Disabilities)
-									mySprott (Sprott Careers and Events)
-									E-Thesis (Submit your thesis electronically)
+                                    <a class="sub-page" href="https://central.carleton.ca/prod/pkg_online_career_services.main">mySuccess Portal</a>
+									<a class="sub-page" href="https://central.carleton.ca/prod/pkg_online_pmc.main">myPMC</a>
+									<a class="sub-page" href="https://central.carleton.ca/prod/pkg_online_sars.p_main?p_location=ADVISING">Academic Advising Center</a>
                                 </div>
                             </div>
 
@@ -233,7 +241,7 @@
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
