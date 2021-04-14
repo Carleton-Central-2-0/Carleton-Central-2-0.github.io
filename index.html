@@ -12,6 +12,9 @@
     <title>Main Menu</title>
 	    
     <!-- Custom fonts for this template-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/sb-admin-2.min.js"></script>
+
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
@@ -19,7 +22,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+	
 </head>
 
 <body id="page-top">
@@ -28,12 +31,13 @@
 
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-redmain sidebar sidebar-dark accordion" id="accordionSidebar">
-
+		
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-				
                 <div class="sidebar-brand-text mx-2">
-					</div>
+				<img class="img" src="img/red.png" alt="">
+				<img class="img" id="logo" src="img/carletonlogo2.gif" alt="">
+				</div>
             </a>
 
             <!-- Divider -->
@@ -42,9 +46,9 @@
             <!-- Nav Item - Main Menu -->
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
+				<br/>
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Main Menu</span></a>
-					
             </li>
 
             <!-- Divider -->
@@ -108,7 +112,7 @@
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                <button class="rounded-circle border-0" id="sidebarToggle" ></button>
             </div>
 
 
@@ -128,18 +132,20 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-					<img class="img-fluid px-3 px-sm-4 mt-3 mb-4 mx-5" style="width: 10rem;"
-                                            src="img/carletonlogo2.gif" alt="">
+					<!-- <img class="img-fluid px-3 px-sm-4 mt-3 mb-4 mx-5" style="width: 10rem;" src="img/carletonlogo2.gif" alt="">
+					-->
+					
+					<img class="img-fluid px-3 px-sm-4 mt-3 mb-4 mx-5" style="width: 12rem;" src="img/white.png" alt="">
+					
 					<h2 class="m-1 font-weight-bold text-dark">Carleton Central</h2>
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
-
-
+			
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+							<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Your Name</span>
+								<span class="btn btn-dark mr-2 d-none d-lg-inline text-white-600 large">John Smith</span>
                                 <img class="img-profile rounded-circle"
                                     src="https://p7.hiclipart.com/preview/402/864/42/arrow-computer-icons-down-arrow.jpg">
                             </a>
@@ -157,6 +163,7 @@
                                 </a>
                             </div>
                         </li>
+						
 
                     </ul>
 
@@ -215,16 +222,16 @@
 												</button>
 											<a class="text-white" href="zregistration.html">Registration</a>
 											
-                                            <div class="text-white-50 small">Class registration details.</div>
+                                            <div class="text-white small">Class registration details.</div>
 											<div class = "collapsible" style="display: none";>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskrsta.P_RegsStatusDisp">Registration Information</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwysched.p_select_term_s?wsea_code=INT">Build Your Timetable</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskfreg.P_AltPin">Registration</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskfshd.P_CrseSchd">Student Timetable</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_CROS.p_trmsel">Registration Override Request</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskoacc.P_ViewHold">Display Holds</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_french_test.main">French Placement Test</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_bookstore.main">Purchase Textbooks</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/bwskrsta.P_RegsStatusDisp">Registration Information</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/bwysched.p_select_term_s?wsea_code=INT">Build Your Timetable</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/bwskfreg.P_AltPin">Registration</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/bwskfshd.P_CrseSchd">Student Timetable</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_CROS.p_trmsel">Registration Override Request</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/bwskoacc.P_ViewHold">Display Holds</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_french_test.main">French Placement Test</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_bookstore.main">Purchase Textbooks</a>
 												</div>
 											</div>
                                         </div>
@@ -241,11 +248,11 @@
 												</button>
 											<a class="text-white" href="zsupport.html">Student Support Services</a>
 											
-                                            <div class="text-white-50 small">mySuccess, myPMC and mySprott.</div>
+                                            <div class="text-white small">mySuccess, myPMC and mySprott.</div>
 											<div class = "collapsible1" style="display: none";>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_career_services.main">mySuccess Portal</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_pmc.main">myPMC</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_sars.p_main?p_location=ADVISING">Academic Advising Center</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_career_services.main">mySuccess Portal</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_pmc.main">myPMC</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_sars.p_main?p_location=ADVISING">Academic Advising Center</a>
 												</div>
 											</div>
                                         </div>
@@ -262,15 +269,15 @@
 												</button>
 												<a class="text-white" href="zaccounts.html">Student Accounts</a>
 												
-												<div class="text-white-50 small">Campus card, optouts and transcripts.</div>
+												<div class="text-white small">Campus card, optouts and transcripts.</div>
 												<div class="collapsible2" style="display: none";>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_sarcentral.p_amt_due">Amount to Pay</a>
-													<a class="dropdown-item" href="https://wcc.carleton.ca/student/welcome.php">Campus Card</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/twbkwbis.P_GenMenu?name=bmenu.P_CanTaxMnu">Print Tax Receipts</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_request.p_main">Request a Transcript/Certificate of Enrolment/Verification of Student Status</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_upass_optout.p_continue">Request UPASS Optout</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_insurance_optout.main">Optout Undergrad Insurance</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_refund_request.p_main">Refund or Scholarship Balance Request</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_sarcentral.p_amt_due">Amount to Pay</a>
+													<a class="dropdown-item small" href="https://wcc.carleton.ca/student/welcome.php">Campus Card</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/twbkwbis.P_GenMenu?name=bmenu.P_CanTaxMnu">Print Tax Receipts</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_request.p_main">Request a Transcript/Certificate of Enrolment/Verification of Student Status</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_upass_optout.p_continue">Request UPASS Optout</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_insurance_optout.main">Optout Undergrad Insurance</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_refund_request.p_main">Refund or Scholarship Balance Request</a>
 												</div>
 											
 											</div>
@@ -290,12 +297,12 @@
 												</button>
 												<a class="text-white" href="zawards.html">Financial Assistance</a>
 												
-												<div class="text-white-50 small">Awards and application forms.</div>
+												<div class="text-white small">Awards and application forms.</div>
 												<div class="collapsible3" style="display: none"; >
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/P_Liststudawdfund.P_ViewSutdAcctFnd">Student Award Information</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_faa_online_apps.p_term_select">Undergraduate Online Application Forms</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_gr_awards.p_stu_main">Graduate Online Application Forms</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_thank_donor_fund_awards.p_main">Thank You Messages</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/P_Liststudawdfund.P_ViewSutdAcctFnd">Student Award Information</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_faa_online_apps.p_term_select">Undergraduate Online Application Forms</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_gr_awards.p_stu_main">Graduate Online Application Forms</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_thank_donor_fund_awards.p_main">Thank You Messages</a>
 												</div>
 											</div>
                                             
@@ -314,13 +321,13 @@
 												</button>
 												<a class="text-white" href="zprogress.html">Academic Progress and Exams</a>
 												
-												<div class="text-white-50 small">Grades, exams and progress.</div>
+												<div class="text-white small">Grades, exams and progress.</div>
 												<div class="collapsible4" style="display: none"; >
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskogrd.P_ViewTermGrde">myGrades</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_exam_class_list.p_parm_form">myExam Schedule</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/twbkwbis.P_GenMenu?name=bmenu.P_DarsMnu">myAudit</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_asr.p_main">myASR</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_myprogress.p_main">myProgress</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/bwskogrd.P_ViewTermGrde">myGrades</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_exam_class_list.p_parm_form">myExam Schedule</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/twbkwbis.P_GenMenu?name=bmenu.P_DarsMnu">myAudit</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_asr.p_main">myASR</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_myprogress.p_main">myProgress</a>
 												</div>
 											
 											</div>
@@ -340,9 +347,9 @@
 												</button>
 												<a class="text-white" href="https://central.carleton.ca/prod/pkg_housing_online.p_main">Residence</a>
 												
-												<div class="text-white-50 small">Housing services.</div>
+												<div class="text-white small">Housing services.</div>
 												<div class="collapsible5" style="display: none"; >
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_housing_online.p_main">Housing Services</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_housing_online.p_main">Housing Services</a>
 												</div>
 											
 											</div>
@@ -362,18 +369,18 @@
 												</button>
 												<a class="text-white" href="zapplications.html">Admissions and Applications</a>
 												
-												<div class="text-white-50 small">Admissions and applications.</div>
+												<div class="text-white small">Admissions and applications.</div>
 												<div class="collapsible6" style="display: none"; >
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskalog.P_DispChoicesStu">Review Admission Application</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/bwskoacc.P_ViewHold">View Holds and Conditions of Offer</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/webadmit.privacy">Internal Application for Admission</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_major.main">Change Program Elements</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_equiv_crse.p_showtrans">myTransferCredit</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_oie.p_main">Outgoing International Exchange Application</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_lop.p_continue">Letter of Permission Applications</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_online_gradapp.main">Apply to Graduate</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_graf_applicant.p_main">Graduate Admissions</a>
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pkg_ethesis.p_redirect">E-Thesis</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/bwskalog.P_DispChoicesStu">Review Admission Application</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/bwskoacc.P_ViewHold">View Holds and Conditions of Offer</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/webadmit.privacy">Internal Application for Admission</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_major.main">Change Program Elements</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_equiv_crse.p_showtrans">myTransferCredit</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_oie.p_main">Outgoing International Exchange Application</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_lop.p_continue">Letter of Permission Applications</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_online_gradapp.main">Apply to Graduate</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_graf_applicant.p_main">Graduate Admissions</a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pkg_ethesis.p_redirect">E-Thesis</a>
 												</div>
 											
 											</div>
@@ -393,18 +400,18 @@
 												</button>
 												<a class="text-white" href="zonline.html">Online Training Courses</a>
 												
-												<div class="text-white-50 small">Online Training Courses.</div>
+												<div class="text-white small">Online Training Courses.</div>
 												<div class="collapsible7" style="display: none"; >
-													<a class="dropdown-item" href="https://central.carleton.ca/prod/pzp_learning.p_aoda"> AODA - Customer Service Standards </a>
-													<a class="dropdown-item" href="https://culearn.carleton.ca/moodle/course/view.php?id=40423"> AODA - Employment Standard Training </a>
-													<a class="dropdown-item" href="https://culearn.carleton.ca/moodle/course/view.php?id=40426"> AODA - Information and Communications Training</a>
-													<a class="dropdown-item" href="https://culearn.carleton.ca/moodle/course/view.php?id=141974"> Workplace Violence and Harassment Prevention Training – Respect and Safety </a>
-													<a class="dropdown-item" href="https://culearn.carleton.ca/moodle/course/view.php?id=38782"> Worker Health and Safety Awareness </a>
-													<a class="dropdown-item" href="https://culearn.carleton.ca/moodle/course/view.php?id=38783"> Supervisor Health and Safety Awareness </a>
-													<a class="dropdown-item" href="https://culearn.carleton.ca/moodle/course/view.php?id=38784"> Workplace Hazardous Materials Information System (WHMIS)</a>
-													<a class="dropdown-item" href="https://culearn.carleton.ca/moodle/course/view.php?id=51276"> Fire Safety </a>
-													<a class="dropdown-item" href="https://culearn.carleton.ca/moodle/course/view.php?id=51278"> Asbestos Awareness </a>
-													<a class="dropdown-item" href="https://culearn.carleton.ca/moodle/course/view.php?id=153106"> COVID-19: Infection Prevention and Control Training </a>
+													<a class="dropdown-item small" href="https://central.carleton.ca/prod/pzp_learning.p_aoda"> AODA - Customer Service Standards </a>
+													<a class="dropdown-item small" href="https://culearn.carleton.ca/moodle/course/view.php?id=40423"> AODA - Employment Standard Training </a>
+													<a class="dropdown-item small" href="https://culearn.carleton.ca/moodle/course/view.php?id=40426"> AODA - Information and Communications Training</a>
+													<a class="dropdown-item small" href="https://culearn.carleton.ca/moodle/course/view.php?id=141974"> Workplace Violence and Harassment Prevention Training – Respect and Safety </a>
+													<a class="dropdown-item small" href="https://culearn.carleton.ca/moodle/course/view.php?id=38782"> Worker Health and Safety Awareness </a>
+													<a class="dropdown-item small" href="https://culearn.carleton.ca/moodle/course/view.php?id=38783"> Supervisor Health and Safety Awareness </a>
+													<a class="dropdown-item small" href="https://culearn.carleton.ca/moodle/course/view.php?id=38784"> Workplace Hazardous Materials Information System (WHMIS)</a>
+													<a class="dropdown-item small" href="https://culearn.carleton.ca/moodle/course/view.php?id=51276"> Fire Safety </a>
+													<a class="dropdown-item small" href="https://culearn.carleton.ca/moodle/course/view.php?id=51278"> Asbestos Awareness </a>
+													<a class="dropdown-item small" href="https://culearn.carleton.ca/moodle/course/view.php?id=153106"> COVID-19: Infection Prevention and Control Training </a>
 													
 												</div>
 											
@@ -445,12 +452,12 @@
                                         <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 35rem;"
                                             src="img/study2.svg" alt="">
                                     </div>
-									<p> Click here to register your cellphone and Subscribe to receive text message alerts in 
+									<p class="text-dark"> Click here to register your cellphone and Subscribe to receive text message alerts in 
 									the event of an unplanned service disruption on campus (e.g. road/pathway closures, elevator outages, 
 									etc): <a  class="text-black" href="google.com">Service Disruption Notification</a> </p>
-                                    <p>Planned Outage - Sun Feb 7 - 7am-2pm - Banner/FAST, Carleton Central, Carleton360, eShop, u.
+                                    <p class="text-dark">Planned Outage - Sun Feb 7 - 7am-2pm - Banner/FAST, Carleton Central, Carleton360, eShop, u.
 									Achieve/DARS Audit, MC1, cuPortfolio, The Portal (See details for all services affected)</p>
-									<p>Planned Outage - Sun Feb 7/21-7am - Mon Feb 8/21 - 9pm - Carleton360 (CRM) Services</p>
+									<p class="text-dark">Planned Outage - Sun Feb 7/21-7am - Mon Feb 8/21 - 9pm - Carleton360 (CRM) Services</p>
                                 </div>
                             </div>
 
@@ -460,10 +467,10 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Other Useful Links</h6>
                                 </div>
                                 <div class="card-body">
-                                    <p><a class="text-black" href="google.com">Site Map</a></p>
-									<p><a class="text-black" href="google.com">Terms and Conditions of Usage</a></p>
-                                    <p><a class="text-black" href="google.com">Accessibility</a></p>
-									<p><a class="text-black" href="google.com">Help</a></p>
+                                    <p><a class="text-black" href="https://central.carleton.ca/prod/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&depth_in=2&columns_in=3">Site Map</a></p>
+									<p><a class="text-black" href="https://central.carleton.ca/prod/twbkwbis.P_GenMenu?name=bmenu.P_UsageMnu">Terms and Conditions of Usage</a></p>
+                                    <p><a class="text-black" href="https://central.carleton.ca/prod/twbkwbis.P_GenMenu?name=twbksite.P_DispAccessibility">Accessibility</a></p>
+									<p><a class="text-black" href="https://central.carleton.ca/wtlhelp/twbhhelp.htm">Help</a></p>
                                 </div>
                             </div>
 
@@ -518,6 +525,7 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
+	
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -525,7 +533,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
 	<!-- Custom scripts for all pages-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
     <script src="js/sb-admin-2.min.js"></script>
 
 
